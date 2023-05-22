@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DefinitionsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="306.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="294.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="ProjectNames" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="ProjectNames1" prefWidth="106.0" text="Project Name" />
+          <TableColumn fx:id="ProjectNames2" prefWidth="199.0" text="LifeCycles" />
+        </columns>
+      </TableView>
+      <TableView fx:id="LifeCycles" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+        <columns>
+          <TableColumn fx:id="LifeCycles1" prefWidth="100.0" text="Life Cycle Steps" />
+          <TableColumn fx:id="LifeCycles2" prefWidth="100.0" text="Effort Category" />
+            <TableColumn fx:id="LifeCycles3" prefWidth="100.0" text="Deliverable" />
+        </columns>
+      </TableView>
+      <TableView fx:id="EffortCategories" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="EffortCategories1" prefWidth="50.0" text="Index" />
+          <TableColumn fx:id="EffortCategories2" prefWidth="255.0" text="Effort Categories" />
+        </columns>
+      </TableView>
+      <TableView fx:id="Plans" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <columns>
+            <TableColumn fx:id="Plans1" prefWidth="50.0" text="Index" />
+            <TableColumn fx:id="Plans2" prefWidth="250.0" text="Plans" />
+         </columns>
+      </TableView>
+      <TableView fx:id="Deliverables" layoutX="316.0" layoutY="144.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <columns>
+            <TableColumn fx:id="Deliverables1" prefWidth="50.0" text="Index" />
+            <TableColumn fx:id="Deliverables2" prefWidth="255.0" text="Deliverables" />
+         </columns>
+      </TableView>
+      <TableView fx:id="Interruptions" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columns>
+            <TableColumn fx:id="Interruptions1" prefWidth="50.0" text="Index" />
+            <TableColumn fx:id="Interruptions2" prefWidth="250.0" text="Interruptions" />
+         </columns>
+      </TableView>
+   </children>
+</GridPane>

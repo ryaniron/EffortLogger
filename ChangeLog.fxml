@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="682.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChangeLogController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.2674331665039" minWidth="10.0" prefWidth="247.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="402.0848388671875" minWidth="10.0" prefWidth="237.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="198.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="10.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="80.0" minHeight="4.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Select Log:">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <ComboBox fx:id="ComboLog" prefHeight="26.0" prefWidth="216.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Select Project:">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <ComboBox fx:id="ComboProject" prefHeight="26.0" prefWidth="190.0" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="ClearBtn" mnemonicParsing="false" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #3066BE; -fx-border-radius: 20; -fx-background-radius: 20;" text="Clear Log" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="95.0" text="Start Time:" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="StartField" prefHeight="26.0" prefWidth="204.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin></TextField>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="86.0" text="Stop Time:" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <TextField fx:id="StopField" alignment="CENTER" prefHeight="26.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="67.0" prefWidth="228.0" GridPane.rowIndex="4">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="127.0" text="Life Cycle Step:">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <ComboBox fx:id="ComboStep" prefHeight="26.0" prefWidth="186.0" />
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Effort Category:">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <ComboBox fx:id="ComboEffort" prefHeight="26.0" prefWidth="187.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <TextField fx:id="Other" prefHeight="26.0" prefWidth="114.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <Label fx:id="CategoryLabel" />
+            <ComboBox fx:id="ComboPlan" prefHeight="13.0" prefWidth="234.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="DeleteBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #3066BE; -fx-background-radius: 20; -fx-border-radius: 20;" text="Delete This Entry" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="102.0" text="ChangeLog:">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <TextField fx:id="ChangeField" prefHeight="26.0" prefWidth="244.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="98.0" text="User Initials:">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <TextField fx:id="InitialField">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="UpdateBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #3066BE; -fx-border-radius: 20; -fx-background-radius: 20;" text="Update Entry" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="42.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Effort Log Editor" textAlignment="CENTER">
+               <font>
+                  <Font name="Al Tarikh Regular" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>
